@@ -83,8 +83,10 @@ const SpringAnimatedFeatures = () => {
                   src={project.image}
                   width={400}
                   height={300}
-                  className="mb-3 rounded"
                   alt={project.name}
+                  className="mb-3 rounded"
+                  style={{ width: "400px", height: "300px" }} // Optional to ensure explicit size
+                  priority // Optional: For faster loading if needed
                 />
                 <div className="mb-1 text-sm font-bold ">{project.name}</div>
                 <div className="max-w-[250px] text-sm font-normal text-gray-600 dark:text-gray-400">

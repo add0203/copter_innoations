@@ -44,11 +44,10 @@ const Contact: React.FC = () => {
     if (formRef.current) {
       emailjs
         .sendForm(
-          "service_22tytdb", // Your EmailJS service ID
-          //   "template_r7e8iu2", // Your EmailJS template ID
-          "template_z9gnemv", // Your EmailJS template ID
-          formRef.current, // The form reference
-          "f4J-2XbyAsPVAj3u8" // Your EmailJS user ID
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          formRef.current!,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
         )
 
         .then(
@@ -71,7 +70,8 @@ const Contact: React.FC = () => {
       <div className="bg-white dark:bg-black     rounded-lg p-6 w-full max-w-lg mt-8 transition-colors duration-300 m-6">
         <p className="mb-4 text-center text-gray-900 dark:text-gray-300">
           If you have any questions or need further assistance, please feel free
-          to reach out. <strong>We're here to help!</strong>
+          to reach out.
+          <strong>We&apos;re here to help!</strong>
         </p>
 
         <form

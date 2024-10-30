@@ -61,7 +61,8 @@ export default function Features() {
                 className="rounded-md border bg-muted transition-colors"
                 width={500}
                 height={300}
-                layout="responsive"
+                style={{ width: "100%", height: "auto" }} // Ensure responsive behavior
+                priority // Optional: For fast loading
               />
             </motion.article>
           </Link>

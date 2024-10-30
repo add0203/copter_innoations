@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function Footer() {
   const {
@@ -30,11 +31,14 @@ export default function Footer() {
         <div className="flex flex-col lg:grid lg:grid-cols-2">
           {/* Form Section */}
           <div className="border-b py-6 lg:order-last lg:border-b-0 lg:border-s lg:py-10 lg:ps-10 ">
-            <img
+            <Image
               src="/copter_innovation.png"
-              alt="Company Logo"
+              alt="Logo"
+              width={100}
+              height={100}
               className="h-12 w-auto rounded-sm items-center"
             />
+
             <h3 className="text-xl font-medium py-4">
               Fill the form to submit your custom order
             </h3>

@@ -1,5 +1,6 @@
 import { ArrowRight, Cannabis } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { BorderBeam } from "../magicui/border-beam";
 import { Button } from "../ui/button";
 import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
@@ -10,10 +11,14 @@ export default function HeroSection() {
       className="flex flex-col items-center justify-center leading-6 mt-[3rem]"
       aria-label="Copter innovation"
     >
-      <img
+      <Image
         src="/copter_innovation.png"
         alt="Logo"
-        className="h-12 w-auto rounded-sm items-center"
+        width={100}
+        height={100}
+        className="rounded-sm"
+        priority // Optional: Ensures the image loads quickly if it’s above the fold
+        style={{ width: "100px", height: "100px" }} // Ensures correct dimensions
       />
 
       <h1
@@ -25,7 +30,7 @@ export default function HeroSection() {
         At Copter Innovations, we manufacture precision-engineered drone frames
         for Multi-copters, Fixed Wing, and Hybrid VTOLs. Founded on a passion
         for aerial technology, we aim to redefine the drone manufacturing
-        landscape with innovative solutions tailored to our clients' needs.
+        landscape with innovative solutions tailored to our clients&apos; needs.
       </p>
       <div className="flex justify-center items-center gap-3">
         <Link

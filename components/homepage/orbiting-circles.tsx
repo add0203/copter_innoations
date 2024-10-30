@@ -16,7 +16,8 @@ const Icon = ({ src, alt, width, height }: IconProps) => (
     alt={alt}
     width={width} // Explicit width
     height={height} // Explicit height
-    layout="intrinsic"
+    style={{ width: `${width}px`, height: `${height}px` }} // Ensure styling
+    priority // Optional: Prioritize loading if needed
   />
 );
 
