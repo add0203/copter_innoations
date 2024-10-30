@@ -41,6 +41,13 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload on form submission
 
+    console.log(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      formRef.current!,
+      process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+    );
+
     if (formRef.current) {
       emailjs
         .sendForm(
@@ -49,7 +56,6 @@ const Contact: React.FC = () => {
           formRef.current!,
           process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
         )
-
         .then(
           (result) => {
             console.log(result.text); // Log success message
