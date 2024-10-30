@@ -18,7 +18,7 @@ export default function HeroSection() {
         height={100}
         className="rounded-sm"
         priority // Optional: Ensures the image loads quickly if it’s above the fold
-        style={{ width: "100px", height: "100px" }} // Ensures correct dimensions
+        style={{ width: "70px", height: "70px" }} // Ensures correct dimensions
       />
 
       <h1
