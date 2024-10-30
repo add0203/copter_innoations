@@ -5,7 +5,7 @@ import Servies from "@/components/homepage/services-section";
 export default function Products() {
   return (
     <PageWrapper>
-      <div className="mt-[3rem] flex flex-col justify-center items-center lg:w-[90%]">
+      <div className="mt-[3rem] flex flex-col justify-center items-center lg:w-[100%]">
         <Servies />
       </div>
     </PageWrapper>
