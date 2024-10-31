@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
         <p className="mb-4 text-center text-gray-900 dark:text-gray-300">
           If you have any questions or need further assistance, please feel free
           to reach out.
-          <strong>We&apos;re here to help!</strong>
+          <strong> We&apos;re here to help!</strong>
         </p>
 
         <form

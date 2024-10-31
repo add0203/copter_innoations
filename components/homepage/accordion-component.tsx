@@ -37,25 +37,27 @@ const faqs = [
 
 export function AccordionComponent() {
   return (
-    <div className="flex flex-col w-[70%] lg:w-[50%]">
+    <div>
       <h2
         className={`mt-2 text-center font-semibold tracking-tight text-gray-900 dark:text-white
       text-2xl sm:text-2xl md:text-3xl lg:text-4xl pb-4`}
       >
         Why Choose Us?
       </h2>
-      <Accordion type="single" collapsible className="w-full mt-2">
-        {faqs.map((faq) => (
-          <AccordionItem key={faq.id} value={`item-${faq.id}`}>
-            <AccordionTrigger>
-              <span className="font-medium">{faq.question}</span>
-            </AccordionTrigger>
-            <AccordionContent>
-              <p>{faq.answer}</p>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+      <div className="flex flex-col w-[70%] lg:w-[50%]">
+        <Accordion type="single" collapsible className="w-full mt-2">
+          {faqs.map((faq) => (
+            <AccordionItem key={faq.id} value={`item-${faq.id}`}>
+              <AccordionTrigger>
+                <span className="font-medium">{faq.question}</span>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p>{faq.answer}</p>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
     </div>
   );
 }
