@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -24,7 +23,7 @@ export default function Features() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col items-center justify-center p-3 w-full text-center">
+      <div className="p-2 w-full text-center">
         <div className="flex flex-col items-center gap-2 w-full">
           <div className="flex justify-center items-center w-full gap-3">
             <h1
@@ -35,7 +34,7 @@ export default function Features() {
             </h1>
           </div>
 
-          <div className="flex gap-3 justify-center items-center w-full border-b pb-7">
+          <div className="flex gap-3 justify-center items-center w-full border-b pb-5">
             <p className="text-gray-600 dark:text-gray-400">
               Empowering Your Operations with State-of-the-Art Drone Designs.
             </p>
