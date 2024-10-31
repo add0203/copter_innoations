@@ -16,13 +16,13 @@ export default function HeroSection() {
         alt="Logo"
         width={100}
         height={100}
-        className="rounded-sm"
+        className="rounded-sm pb-4"
         priority // Optional: Ensures the image loads quickly if it’s above the fold
-        style={{ width: "70px", height: "70px" }} // Ensures correct dimensions
+        style={{ width: "70px", height: "auto" }} // Ensures correct dimensions
       />
 
       <h1
-        className={`${TITLE_TAILWIND_CLASS} mt-4 scroll-m-20 font-semibold tracking-tight text-center max-w-[1120px] bg-gradient-to-b dark:text-white`}
+        className={`text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white`}
       >
         Copter Innovations
       </h1>

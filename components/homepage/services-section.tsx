@@ -1,5 +1,5 @@
 "use client";
-import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,7 @@ const ProjectsData = [
     name: "Quad-550",
     description:
       "Weighing less than 500 g, it supports up to 16-inch propellers, ideal for lightweight operations.",
-    image: "/18_inch_quad.jpg",
+    image: "/Quad_550.jpg",
     url: "",
   },
   {
@@ -18,7 +18,7 @@ const ProjectsData = [
     name: "FW-220",
     description:
       "With a 2.2 m wingspan and 2 hours of endurance, this model excels in large-scale mapping and surveillance tasks.",
-    image: "/FW160_2.jpg",
+    image: "/FW220.jpg",
     url: "",
   },
   {
@@ -26,7 +26,8 @@ const ProjectsData = [
     name: "18 inches Quad",
     description:
       "Designed for 18-inch propellers, it offers up to 60 minutes of flight time and weighs less than 600 g.",
-    image: "/Quad_550.jpg",
+    image: "/18_inch_quad.jpg",
+
     url: "",
   },
   {
@@ -34,7 +35,7 @@ const ProjectsData = [
     name: "FW160",
     description:
       "Featuring a 1600 mm wingspan, 90 minutes of endurance, and a 500 g payload capacity, it's built for extended missions.",
-    image: "/FW160_2.jpg",
+    image: "/FW160.jpg",
     url: "",
   },
 ];
@@ -42,9 +43,11 @@ const ProjectsData = [
 const SpringAnimatedFeatures = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full lg:w-[75%] p-4">
-      <div className="mb-12">
-        <h2 className={TITLE_TAILWIND_CLASS}>Product We Deliver</h2>
-        <p className="mx-auto mt-2 max-w-[500px] text-gray-600 dark:text-gray-400 text-center">
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white">
+          Product We Deliver
+        </h2>
+        <p className="mx-auto mt-2 max-w-[500px] text-gray-600 dark:text-gray-400">
           Explore our range of cutting-edge drone models, designed to meet
           diverse needs.
         </p>

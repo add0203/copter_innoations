@@ -39,7 +39,8 @@ export function AccordionComponent() {
   return (
     <div className="flex flex-col w-[70%] lg:w-[50%]">
       <h2
-        className={`${TITLE_TAILWIND_CLASS} mt-1 font-semibold text-center tracking-tight dark:text-white text-gray-900`}
+        className={`mt-2 text-center font-semibold tracking-tight text-gray-900 dark:text-white
+      text-3xl sm:text-3xl md:text-4xl lg:text-5xl pb-4`}
       >
         Why Choose Us?
       </h2>

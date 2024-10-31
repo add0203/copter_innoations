@@ -1,5 +1,5 @@
 import { OrbitingCirclesComponent } from "./orbiting-circles";
-import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
+
 import { User, ShieldCheck, Rocket } from "lucide-react";
 
 const features = [
@@ -30,11 +30,19 @@ export default function SideBySide() {
         <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <p
-                className={`${TITLE_TAILWIND_CLASS} text-5xl mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}
-              >
-                Crafting Excellence with Copter Innovations
-              </p>
+              <div className="w-full gap-2 border-b pb-3">
+                <h1
+                  className="mt-2 font-semibold tracking-tight text-gray-900 dark:text-white
+                  text-3xl sm:text-3xl md:text-4xl lg:text-5xl "
+                >
+                  Crafting Excellence
+                </h1>
+                <div className="flex gap-3 w-full">
+                  <p className="text-gray-600 dark:text-gray-400 ">
+                    with Copter Innovations
+                  </p>
+                </div>
+              </div>
 
               <dl className="mt-10 max-w-xl space-y-8 leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

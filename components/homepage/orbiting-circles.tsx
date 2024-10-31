@@ -16,7 +16,11 @@ const Icon = ({ src, alt, width, height }: IconProps) => (
     alt={alt}
     width={width} // Explicit width
     height={height} // Explicit height
-    style={{ width: `${width}px`, height: `${height}px` }} // Ensure styling
+    style={{
+      width: `${width}px`,
+      height: `${height}px`,
+      objectFit: "contain", // Preserve aspect ratio
+    }}
     priority // Optional: Prioritize loading if needed
   />
 );
@@ -25,7 +29,7 @@ const Icon = ({ src, alt, width, height }: IconProps) => (
 const Icons = {
   drone: () => (
     <Icon
-      src="/camera-drone.png"
+      src="/cop_1.png"
       alt="Drone Icon"
       width={100} // Set the appropriate width
       height={100} // Set the appropriate height
@@ -33,7 +37,7 @@ const Icons = {
   ),
   droneCamera: () => (
     <Icon
-      src=""
+      src="/cop_2.png"
       alt="Drone Camera Icon"
       width={100} // Set the appropriate width
       height={100} // Set the appropriate height
@@ -41,7 +45,7 @@ const Icons = {
   ),
   droneDelivery: () => (
     <Icon
-      src=""
+      src="/cop_3.png"
       alt="Drone Delivery Icon"
       width={100} // Set the appropriate width
       height={100} // Set the appropriate height
@@ -49,16 +53,8 @@ const Icons = {
   ),
   droneFlight: () => (
     <Icon
-      src=""
+      src="/cop_4.png"
       alt="Drone Flight Icon"
-      width={100} // Set the appropriate width
-      height={100} // Set the appropriate height
-    />
-  ),
-  droneController: () => (
-    <Icon
-      src=""
-      alt="Drone Controller Icon"
       width={100} // Set the appropriate width
       height={100} // Set the appropriate height
     />

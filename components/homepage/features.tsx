@@ -1,6 +1,5 @@
-"use client"; // Ensure this is at the top for Next.js client-side components
+"use client";
 
-import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -27,13 +26,15 @@ export default function Features() {
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center p-3 w-full text-center">
         <div className="flex flex-col items-center gap-2 w-full">
-          <div className="flex gap-3 justify-center items-center w-full">
+          <div className="flex justify-center items-center w-full gap-3">
             <h1
-              className={`${TITLE_TAILWIND_CLASS} text-center mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}
+              className="mt-2 text-center font-semibold tracking-tight text-gray-900 dark:text-white
+      text-3xl sm:text-3xl md:text-4xl lg:text-5xl"
             >
               Gallery
             </h1>
           </div>
+
           <div className="flex gap-3 justify-center items-center w-full border-b pb-7">
             <p className="text-gray-600 dark:text-gray-400">
               Empowering Your Operations with State-of-the-Art Drone Designs.
@@ -53,7 +54,7 @@ export default function Features() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <Image
                 src={article.image}
