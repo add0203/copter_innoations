@@ -73,7 +73,12 @@ const Contact: React.FC = () => {
 
   return (
     <PageWrapper>
-      <div className="bg-white dark:bg-black     rounded-lg p-6 w-full max-w-lg mt-8 transition-colors duration-300 m-6">
+      <div className="bg-white dark:bg-black rounded-lg p-6 w-full max-w-lg mt-8 transition-colors duration-300 m-6">
+        <h1
+          className={`text-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white mb-3 `}
+        >
+          Contact Us
+        </h1>
         <p className="mb-4 text-center text-gray-900 dark:text-gray-300">
           If you have any questions or need further assistance, please feel free
           to reach out.

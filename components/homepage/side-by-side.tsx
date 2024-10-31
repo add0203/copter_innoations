@@ -33,7 +33,7 @@ export default function SideBySide() {
               <div className="w-full gap-2 border-b pb-3">
                 <h1
                   className="mt-2 font-semibold tracking-tight text-gray-900 dark:text-white
-                  text-3xl sm:text-3xl md:text-4xl lg:text-5xl "
+                  text-2xl sm:text-2xl md:text-3xl lg:text-4xl "
                 >
                   Crafting Excellence
                 </h1>

@@ -44,7 +44,7 @@ const SpringAnimatedFeatures = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full lg:w-[75%] p-4">
       <div className="mb-12 text-center">
-        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
           Product We Deliver
         </h2>
         <p className="mx-auto mt-2 max-w-[500px] text-gray-600 dark:text-gray-400">

@@ -29,7 +29,7 @@ export default function Features() {
           <div className="flex justify-center items-center w-full gap-3">
             <h1
               className="mt-2 text-center font-semibold tracking-tight text-gray-900 dark:text-white
-      text-3xl sm:text-3xl md:text-4xl lg:text-5xl"
+      text-2xl sm:text-2xl md:text-3xl lg:text-4xl"
             >
               Gallery
             </h1>

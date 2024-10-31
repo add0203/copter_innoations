@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { BorderBeam } from "../magicui/border-beam";
 import { Button } from "../ui/button";
-import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
 
 export default function HeroSection() {
   return (
@@ -16,13 +15,13 @@ export default function HeroSection() {
         alt="Logo"
         width={100}
         height={100}
-        className="rounded-sm pb-4"
+        className="rounded-sm "
         priority // Optional: Ensures the image loads quickly if it’s above the fold
         style={{ width: "70px", height: "auto" }} // Ensures correct dimensions
       />
 
       <h1
-        className={`text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white`}
+        className={`pt-4 text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white`}
       >
         Copter Innovations
       </h1>
