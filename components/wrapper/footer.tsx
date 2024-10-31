@@ -120,7 +120,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="/" className="transition hover:opacity-75">
-                      Andhra Pradesh-524121 INDIA
+                      Andhra Pradesh-524121, India
                     </a>
                   </li>
                 </ul>
